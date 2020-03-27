@@ -1,0 +1,7 @@
+#!/bin/bash
+dir=$(pwd)
+data=$(date +"%d-%m-%Y")
+mkdir $dir/$data
+tar -czvf ArquivosTXT.tar.gz *.txt
+tar -czvf ArquivosCSV.tar.gz *.csv
+mv ArquivosTXT.tar.gz ArquivosCSV.tar.gz $dir/%data
